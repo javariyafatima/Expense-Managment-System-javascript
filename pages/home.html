@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="../dashboard.css">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+<body>
+    <div>
+        <div class="header">
+            
+            <div class="image">
+                
+            
+                <a  href="../index.html">
+                    <img src="../assets/images/3-removebg-preview.png">
+                </a> 
+           
+                </div>
+            <div>
+            
+    <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EXPENSE MANAGEMENT SYSTEM</h3></div>
+  
+        
+          
+        </div>
+
+    
+    <div class="body">
+
+        <h2 class="wel">Welcome:&nbsp;<span id="name"></span></h2>
+        
+        <div class="expense">
+            <h1>EXPENSE DETAILS</h1>
+           
+        </div>
+        <div>
+            <button onclick="addExpense()">Add Expense</button>
+        
+        
+        </div>
+        <div id="inp">
+          <div>
+              <input id="description" type="text" placeholder="Expense Description">
+              <input id="amount" type="name" placeholder="Expense Amount">
+              <select id="category" name="select category">
+              <option>SELECT CATEGORY</option>
+              </select>
+          </div>
+          <div class="buttons">
+            <button onclick="add()">Add Expense</button>
+            <button onclick="done()">Done Expense</button>
+
+            <button onclick="openCategoryPopUp()">create Category</button>
+            <div id="categoryPopup" class="popup">
+              
+              <input type="text" id="popupInput">
+              <button class="signIn" onclick="closeCategoryPopup()">Done</button>
+            </div>
+
+          </div>
+        </div>    
+      </div>
+      <div class="search" style="display: flex;">
+      <input id="search"  placeholder="Search Category"type="text" style="width: 700px; height: 40px; background-color:#e6e5f1;" onkeyup="searchFunction()">
+      </div>
+      <div class="table">
+        <table  cellpadding="5px" cellspacing="1px" id="table">
+            <tr>
+                <th id="tdId">Ex. id</th>
+                <th id="tdCategory">Category</th>
+                <th id="tdDescription">Description</th>
+                <th id="tdAmount">Amount</th>
+                <th id="tdAction">Action</th>
+            </tr>
+        </table>
+    </div>
+    </div>
+
+    <script src="./script ex.js"></script>
+    <script src="../script1.js"></script>
+</body>
+
+</html>
+ 

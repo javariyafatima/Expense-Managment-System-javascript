@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title> Sign up / Login Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slide Navbar</title>
+	
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+	
+	<div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
+
+			<div class="signup">
+				<form>
+					<label for="chk" >Sign up</label>
+					
+				
+				 <input type="name" placeholder="User Name" onkeyup="validation()" id="username">
+				</input>
+				
+				
+				<input type="name" placeholder="Enter your Email@Address" onkeyup="validationemail()" id="email">
+			</input>
+					
+				 <input type="number" placeholder="Enter Password"  onkeyup="validation3()" id="password">
+				</input>
+					
+				
+				 <input type="name" placeholder="Confirm your password"onkeyup="validation4()"  id="conformpassword"> 
+				</input>         
+
+		    <button  type="button"onclick="singup(),thank()">submint</button>
+			
+				</form>
+			</div>
+
+			<div class="login">
+				<form>
+					<label for="chk" aria-hidden="">Login</label>
+				</br>
+				&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 	Email Id:
+		 <input type="name" placeholder="Enter your Email@Address" id="Email"></input> </br>
+		 &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 	 Password:
+			<input type="name" placeholder="Enter password" id="Password"></input> 
+	
+	
+	   <button type="button" onclick="singin()" >submint</button>
+				</form>
+			</div>
+	</div>
+
+	<div class="span">
+		<span id="name-error"> </span>
+		<span id="email-error" ></span>
+		<span id="password-error"> </span>
+		<span id="cpassword-error"> </span>     
+		</div>
+	
+	
+
+	
+	
+	
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script src="./script1.js"></script>
+<script src="./sweet.js"></script>
+
+  
+</body>
+</html>
